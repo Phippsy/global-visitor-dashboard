@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "# ui.R\nlibrary(\"highcharter\")\nshinyUI(fluidPage(\n  \n  titlePanel(\"Users by country\"),\n  \n  sidebarLayout(\n    sidebarPanel( \n      p(\"View a map of users to company websites by country\"),\n      \n      radioButtons(\"brandSelect\", \n                   label = \"Select Brand\", \n                   choices = list( \"Brand 1\" = \"Brand 1\", \"Brand 2\" = \"Brand 2\"),\n                   selected = \"Brand 1\", \n                   inline=TRUE),\n      \n      dateRangeInput('dateRange',\n                     label = 'Date range',\n                     start = as.Date(\"2015-09-01\"), end = as.Date(\"2016-09-01\")\n      )\n      \n    ),\n    mainPanel(\n        tabsetPanel(\n          tabPanel(\"Map\",h4(textOutput(\"brandText\")),highchartOutput(\"countryChart\", height = 450),downloadButton('downloadData', 'Download this data')),\n          tabPanel(\"Bar Chart\",h4(textOutput(\"brandText1\")),highchartOutput(\"countryBar\", height = 450),downloadButton(\"downloadBar\", \"Download full data\")))\n      )\n    )\n  )\n)\n\n\n",
+    "created" : 1475751509945.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3998624411",
+    "id" : "EF7098EE",
+    "lastKnownWriteTime" : 1475753663,
+    "last_content_update" : 1475753663060,
+    "path" : "~/Dropbox/3-Work/Training/Software stuff/Coding/R/portfolio/global-visitor-dashboard/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
