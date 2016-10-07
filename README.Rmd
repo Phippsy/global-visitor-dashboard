@@ -1,6 +1,8 @@
 ## Global user dashboard
 
-This shiny dashboard displays a map and bar chart of user volumes by country. It is intended to help business users understand where their highest volumes of users can be found.
+This shiny dashboard displays a map and bar chart of user volumes by country. It is intended to help business users understand where their highest volumes of users can be found. 
+
+The dashboard demo can be viewed live at https://donalphipps.shinyapps.io/global-visitor-dashboard/.
 
 Dummy data is available from 2015-01-01 until 2016-09-30.
 
