@@ -17,7 +17,11 @@ shinyUI(fluidPage(
       dateRangeInput('dateRange',
                      label = 'Date range',
                      start = as.Date("2015-09-01"), end = as.Date("2016-09-01")
-      )
+      ),
+      br(),
+      br(),
+      helpText("View the source code for this dashboard"),
+      tags$a("https://github.com/Phippsy/global-visitor-dashboard", href="https://github.com/Phippsy/global-visitor-dashboard", target = "new")
       
     ),
     mainPanel(
